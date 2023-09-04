@@ -126,7 +126,7 @@ function checkTime() {
     // Check for wrong guesses, add penalty time
     equationsArray.forEach((equation, index) => {
       if (equation.evaluated != playerGuessArray[index]) {
-        penaltyTime += 0.5;
+        penaltyTime += 2;
       }
     })
     finalTime = timePlayed + penaltyTime;
